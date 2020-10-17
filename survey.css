@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+.wrapper-survey-form{
+background-image:linear-gradient(rgba(0, 0, 255, 0.5), rgba(1, 37, 116, 0.5)),url(Survey.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height: auto;
+background-attachment: fixed;
+opacity: 0.8;
+
+}
+
+#title{
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+#description{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-style: italic;
+}
+
+.main-survey-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+#survey-form{
+    border: none;
+    background-color: black;
+    opacity: 0.8;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#name,#email,#age,#dropdown{
+     width:600px;
+     height: 30px;
+}
+
+#Comments{
+    width: 600px;
+    margin-top: 10px;
+}
+
+#submit{
+    width:600px;
+     height: 50px;
+     background-color: green;
+     color: white;
+     font-size: 20px;
+}
+
+@media (max-width:768px){
+    #survey-form{
+        width: 90%;
+        height: auto;
+    }
+
+    input,textarea,select{
+       max-width:90% ;
+       
+}
+
+}
+
+@media (max-width:390px){
+    input,textarea,select{
+        max-width:200px ;
+ }
+}
+
+@media (max-width:320px){
+    input,textarea,select{
+        max-width:160px ;
+ }
+}
